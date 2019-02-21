@@ -17,6 +17,7 @@
     font-size: 1.1rem;
     justify-content: flex-start;
     margin: 1rem 4.5rem;
+    hyphens: none;
 }
 
 .header__title__link {
@@ -578,4 +579,18 @@
     opacity: 0.7;
     transform: scale(0, 0);
     transition: 0s;
+}
+
+.languages {
+    min-width: 2em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0.25em;
+    right: 1em;
+    font-size: 0.25em;
+}
+
+.languages a:not(:last-child):after {
+    content: " | ";
+    color: inherit;
 }

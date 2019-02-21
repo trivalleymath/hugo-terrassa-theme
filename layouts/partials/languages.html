@@ -1,0 +1,17 @@
+
+{{ if and (gt .Site.Languages 1) (.Site.Params.showHeaderLanguageChooser | default true) }}
+{{- $.Scratch.Set "language" .Language -}}
+<div class="languages">
+    {{ range .Site.Languages }}
+        {{ if eq ($.Scratch.Get "language") . }}
+            <a href="{{ . | relURL }}" class="active">{{ . }}</a>
+        {{ else }}
+            <a href="{{ . | relURL }}">{{ . }}</a>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}
+
+<!-- {{ range $.Site.Home.AllTranslations }}
+<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+{{ end }} -->
