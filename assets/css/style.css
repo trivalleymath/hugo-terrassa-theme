@@ -585,9 +585,9 @@
     min-width: 2em;
     text-transform: uppercase;
     position: absolute;
-    top: 0.25em;
+    top: 0.125em;
     right: 1em;
-    font-size: 0.25em;
+    font-size: 14px;
 }
 
 .languages a:not(:last-child):after {
