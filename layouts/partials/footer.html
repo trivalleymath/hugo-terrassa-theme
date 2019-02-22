@@ -49,6 +49,7 @@
         {{ if $.Site.Params.contact.address }}
         <p class="footer__contact__item">
             <span><i class="fas fa-map-marker-alt"></i></span>
+            <a href="https://www.google.com/maps/search/?api=1&query={{ $.Site.Params.contact.address }}" class="footer__contact__link" alt="Address">
             {{ $.Site.Params.contact.address }}
         </p>
         {{ end }}
